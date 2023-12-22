@@ -20,7 +20,7 @@ pipeline {
             }
             post {
                 success {
-                archiveArtifacts 'target/*.jar'
+                    archiveArtifacts 'target/*.jar'
                 }
             }
         }
@@ -40,7 +40,13 @@ pipeline {
         stage('Start Docker Container') {
             steps {
                 script {
-                bat "docker run --name trivianprojet -d -p 9075:8080 trivianprojet:latest MyAwesomeProject.jar"
+                    try {
+                        bat "docker stop myawesomeproject"
+                        bat "docker rm myawesomeproject"
+                    } catch (Exception e) {
+                       echo '404 Not Found : myawesomeproject'
+                    }
+                    bat "docker run --name trivianprojet -d -p 9075:8080 trivianprojet:latest MyAwesomeProject.jar"
 
                 }
             }
