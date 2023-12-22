@@ -40,14 +40,7 @@ pipeline {
         stage('Start Docker Container') {
             steps {
                 script {
-                     try {
-                        bat "docker stop trivianprojet"
-                        bat "docker rm trivianprojet"
-                     } catch (exception e) {
-                        echo '404 Not Found : trivianprojet'
-                     }
-
-                     bat "docker run --name trivianprojet -d -p 9075:8080 trivianprojet:latest MyAwesomeProject.jar"
+                bat "docker run --name trivianprojet -d -p 9075:8080 trivianprojet:latest MyAwesomeProject.jar"
 
                 }
             }
