@@ -70,6 +70,7 @@
 	</reporting>
 
 	<build>
+		<finalName>Dawan_Trivian</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
