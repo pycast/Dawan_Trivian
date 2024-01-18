@@ -1,4 +1,4 @@
-package fr.dawan.Trivian.entities;
+package fr.dawan.trivian.entities;
 
 import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
@@ -11,8 +11,6 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class User extends BaseEntity{
-    private String username;
-    private String email;
-    private String password;
+public class Answers {
+    private String answer;
 }

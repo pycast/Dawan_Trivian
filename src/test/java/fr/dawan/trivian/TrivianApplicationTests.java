@@ -1,4 +1,4 @@
-package fr.dawan.Trivian;
+package fr.dawan.trivian;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
