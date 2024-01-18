@@ -1,7 +1,7 @@
-package fr.dawan.Trivian.services;
+package fr.dawan.trivian.services;
 
-import fr.dawan.Trivian.entities.User;
-import fr.dawan.Trivian.repositories.UserRepository;
+import fr.dawan.trivian.entities.User;
+import fr.dawan.trivian.repositories.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -1,7 +1,7 @@
-package fr.dawan.Trivian.controllers;
+package fr.dawan.trivian.controllers;
 
-import fr.dawan.Trivian.entities.User;
-import fr.dawan.Trivian.services.UserService;
+import fr.dawan.trivian.entities.User;
+import fr.dawan.trivian.services.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

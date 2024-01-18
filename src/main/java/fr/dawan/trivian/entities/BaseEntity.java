@@ -1,4 +1,4 @@
-package fr.dawan.Trivian.entities;
+package fr.dawan.trivian.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
