@@ -25,15 +25,10 @@ public abstract class GenericController<
         return service.findById(id);
     }
 
-    @PostMapping(produces = "application/json", consumes="application/json")
+    @PostMapping
     public D saveOrUpdate(D dto) {
         return service.saveOrUpdate(dto);
     }
-
-    /*@PutMapping("/{id}")
-    public D update(@PathVariable long id, @RequestBody D dto) {
-        return service.saveOrUpdate(dto);
-    }*/
 
     @DeleteMapping("/{id}")
     public void deleteById(@PathVariable long id) {
