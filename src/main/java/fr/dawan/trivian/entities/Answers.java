@@ -11,6 +11,6 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Answers {
+public class Answers extends BaseEntity {
     private String answer;
 }

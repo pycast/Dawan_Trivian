@@ -1,5 +1,6 @@
 package fr.dawan.trivian.controllers;
 
+import fr.dawan.trivian.dto.user.fullUserDto;
 import fr.dawan.trivian.entities.User;
 import fr.dawan.trivian.services.UserService;
 import lombok.RequiredArgsConstructor;
@@ -11,18 +12,11 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequiredArgsConstructor
 @RequestMapping("users")
-public class UserController {
-    private final UserService service;
+public class UserController extends GenericController<fullUserDto, UserService> {
 
-    @GetMapping
-    public List<User> findAll() {
-        return service.findAll();
+    public UserController(UserService service) {
+        super(service);
     }
 
-    @GetMapping("/{id}")
-    public User getById(@PathVariable long id) {
-        return service.getById(id);
-    }
 }

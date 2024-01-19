@@ -1,20 +1,7 @@
 package fr.dawan.trivian.services;
 
-import fr.dawan.trivian.entities.User;
-import fr.dawan.trivian.repositories.UserRepository;
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
+import fr.dawan.trivian.dto.user.fullUserDto;
 
-import java.util.List;
+public interface UserService extends GenericService<fullUserDto> {
 
-@Service
-@RequiredArgsConstructor
-public class UserService {
-    private final UserRepository repository;
-    public List<User> findAll() {
-        return repository.findAll();
-    }
-    public User getById(long id){
-        return repository.getById(id);
-    }
 }

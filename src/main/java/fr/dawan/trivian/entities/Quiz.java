@@ -14,7 +14,7 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Quiz {
+public class Quiz extends BaseEntity{
     private String name;
     private int difficulty;
     private List<Category> categories;

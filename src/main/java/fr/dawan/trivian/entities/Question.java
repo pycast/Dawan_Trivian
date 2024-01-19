@@ -12,7 +12,7 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Question {
+public class Question extends BaseEntity{
     private String questions;
     private List<Answers> answers;
 }
