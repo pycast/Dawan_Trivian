@@ -1,10 +1,7 @@
-package fr.dawan.trivian.services;
+package fr.dawan.trivian.business.user;
 
 
-import fr.dawan.trivian.dto.user.fullUserDto;
-import fr.dawan.trivian.entities.User;
-import fr.dawan.trivian.mappers.UserMapper;
-import fr.dawan.trivian.repositories.UserRepository;
+import fr.dawan.trivian.business.generic.GenericServiceImpl;
 import org.springframework.stereotype.Service;
 
 @Service

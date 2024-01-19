@@ -1,4 +1,4 @@
-package fr.dawan.trivian.mappers;
+package fr.dawan.trivian.business.generic;
 
 public interface GenericMapper<E,D> {
     D toDto(E entity);

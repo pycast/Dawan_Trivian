@@ -7,9 +7,9 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@ComponentScan({"fr.dawan.trivian"})
-@EntityScan("fr.dawan.trivian.entities")
-@EnableJpaRepositories("fr.dawan.trivian.repositories")
+@ComponentScan({"fr.dawan.trivian.business"})
+@EntityScan("fr.dawan.trivian.business")
+@EnableJpaRepositories("fr.dawan.trivian.business")
 public class TrivianApplication {
 
 	public static void main(String[] args) {

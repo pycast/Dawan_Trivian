@@ -1,6 +1,6 @@
-package fr.dawan.trivian.controllers;
+package fr.dawan.trivian.business.user;
 
-import fr.dawan.trivian.services.GenericService;
+import fr.dawan.trivian.business.generic.GenericService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

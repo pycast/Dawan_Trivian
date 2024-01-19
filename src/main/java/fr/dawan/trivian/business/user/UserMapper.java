@@ -1,7 +1,6 @@
-package fr.dawan.trivian.mappers;
+package fr.dawan.trivian.business.user;
 
-import fr.dawan.trivian.dto.user.fullUserDto;
-import fr.dawan.trivian.entities.User;
+import fr.dawan.trivian.business.generic.GenericMapper;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingConstants;
 

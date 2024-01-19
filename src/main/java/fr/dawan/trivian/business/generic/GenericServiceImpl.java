@@ -1,8 +1,6 @@
-package fr.dawan.trivian.services;
+package fr.dawan.trivian.business.generic;
 
 
-import fr.dawan.trivian.entities.BaseEntity;
-import fr.dawan.trivian.mappers.GenericMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

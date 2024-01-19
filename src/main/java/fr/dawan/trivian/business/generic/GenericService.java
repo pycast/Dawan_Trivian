@@ -1,4 +1,4 @@
-package fr.dawan.trivian.services;
+package fr.dawan.trivian.business.generic;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

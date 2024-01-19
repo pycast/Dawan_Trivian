@@ -1,5 +1,7 @@
-package fr.dawan.trivian.entities;
+package fr.dawan.trivian.business.quiz;
 
+import fr.dawan.trivian.business.user.User;
+import fr.dawan.trivian.business.generic.BaseEntity;
 import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -14,14 +16,14 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Quiz extends BaseEntity{
+public class Quiz extends BaseEntity {
     private String name;
     private int difficulty;
     private List<Category> categories;
     private double rating;
     private Date createDate;
     private int flags;
-    private List<Question> questions;
+    private List<Category.Question> questions;
     private boolean visible;
     private User author;
 

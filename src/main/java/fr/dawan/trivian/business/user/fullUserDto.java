@@ -1,4 +1,4 @@
-package fr.dawan.trivian.dto.user;
+package fr.dawan.trivian.business.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

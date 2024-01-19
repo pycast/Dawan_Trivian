@@ -1,7 +1,5 @@
-package fr.dawan.trivian.controllers;
+package fr.dawan.trivian.business.user;
 
-import fr.dawan.trivian.dto.user.fullUserDto;
-import fr.dawan.trivian.services.UserService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
