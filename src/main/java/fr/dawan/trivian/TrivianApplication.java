@@ -14,6 +14,7 @@ public class TrivianApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TrivianApplication.class, args);
+		System.out.println("Helloooo");
 	}
 
 }
