@@ -25,8 +25,8 @@ public abstract class GenericController<
         return service.findById(id);
     }
 
-    @PostMapping
-    public D saveOrUpdate(@RequestBody D dto) {
+    @PostMapping(produces = "application/json", consumes="application/json")
+    public D saveOrUpdate(D dto) {
         return service.saveOrUpdate(dto);
     }
 

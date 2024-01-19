@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>fr.dawan</groupId>
-	<artifactId>Trivian</artifactId>
+	<artifactId>trivian</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Trivian</name>
 	<description>Application de quiz</description>
