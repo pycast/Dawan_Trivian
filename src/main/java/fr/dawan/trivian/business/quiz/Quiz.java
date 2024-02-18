@@ -1,8 +1,10 @@
 package fr.dawan.trivian.business.quiz;
 
+import fr.dawan.trivian.business.category.Category;
+import fr.dawan.trivian.business.question.Question;
 import fr.dawan.trivian.business.user.User;
 import fr.dawan.trivian.business.generic.BaseEntity;
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,12 +21,15 @@ import java.util.List;
 public class Quiz extends BaseEntity {
     private String name;
     private int difficulty;
+    @ManyToMany
+    @JoinTable(name="Quiz_Category")
     private List<Category> categories;
     private double rating;
     private Date createDate;
     private int flags;
-    private List<Category.Question> questions;
+    @OneToMany
+    private List<Question> questions;
     private boolean visible;
+    @ManyToOne
     private User author;
-
 }

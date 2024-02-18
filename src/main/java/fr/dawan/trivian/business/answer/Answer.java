@@ -1,4 +1,4 @@
-package fr.dawan.trivian.business.quiz;
+package fr.dawan.trivian.business.answer;
 
 import fr.dawan.trivian.business.generic.BaseEntity;
 import jakarta.persistence.Entity;
@@ -12,6 +12,6 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Answers extends BaseEntity {
-    private String answer;
+public class Answer extends BaseEntity {
+    private String label;
 }
