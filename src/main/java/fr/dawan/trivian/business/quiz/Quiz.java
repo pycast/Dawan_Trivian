@@ -33,7 +33,8 @@ public class Quiz extends BaseEntity {
     private List<Question> questions;
     private boolean visible = false;
     @ManyToOne
-    private User author;
+    @JoinColumn(name="author_id")
+    private User user;
 }
 
 /* ne recoit pas l'auteur, ne définit pas l'heure actuelle de base */
