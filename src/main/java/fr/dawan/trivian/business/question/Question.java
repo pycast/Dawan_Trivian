@@ -3,10 +3,7 @@ package fr.dawan.trivian.business.question;
 import fr.dawan.trivian.business.answer.Answer;
 import fr.dawan.trivian.business.generic.BaseEntity;
 import fr.dawan.trivian.business.quiz.Quiz;
-import jakarta.persistence.Entity;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -21,7 +18,7 @@ import java.util.List;
 @AllArgsConstructor
 public class Question extends BaseEntity {
     private String label;
-    @OneToMany
+    @OneToMany(cascade = {CascadeType.PERSIST})
     private List<Answer> answers;
     @ManyToOne
     @JoinColumn(name = "quiz_id")

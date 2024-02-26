@@ -17,8 +17,5 @@ import lombok.Setter;
 @AllArgsConstructor
 public class Answer extends BaseEntity {
     private String label;
-    @ManyToOne
-    @JoinColumn(name = "question_id")
-    private Question question;
-    private boolean isCorrect;
+    private boolean correct;
 }

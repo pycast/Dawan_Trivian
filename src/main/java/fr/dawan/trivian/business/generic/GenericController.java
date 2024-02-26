@@ -25,7 +25,7 @@ public abstract class GenericController<
     }
 
     @PostMapping
-    public D saveOrUpdate(D dto) {
+    public D saveOrUpdate(@RequestBody D dto) {
         return service.saveOrUpdate(dto);
     }
 

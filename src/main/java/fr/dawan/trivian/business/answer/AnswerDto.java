@@ -4,7 +4,8 @@ import lombok.Data;
 
 @Data
 public class AnswerDto {
+    private long id;
+    private int version;
     private String label;
-    private long question_id;
-    private boolean isCorrect;
+    private boolean correct;
 }
