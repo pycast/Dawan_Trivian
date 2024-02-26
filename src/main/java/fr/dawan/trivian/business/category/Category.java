@@ -18,7 +18,5 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Category extends BaseEntity {
-    @ManyToMany
-    private List<Quiz> quizzes;
     private String label;
 }

@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RequiredArgsConstructor
+@CrossOrigin(origins = "http://localhost:5173/")
 public abstract class GenericController<
         D,
         S extends GenericService<D>

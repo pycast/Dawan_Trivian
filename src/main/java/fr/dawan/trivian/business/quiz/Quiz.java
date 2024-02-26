@@ -29,8 +29,6 @@ public class Quiz extends BaseEntity {
     @Temporal(TemporalType.DATE)
     private Date createDate;
     private int flags = 0;
-    @OneToMany
-    private List<Question> questions;
     private boolean visible = false;
     @ManyToOne
     @JoinColumn(name="author_id")
