@@ -36,5 +36,3 @@ public class Quiz extends BaseEntity {
     @JoinColumn(name="author_id")
     private User user;
 }
-
-/* ne recoit pas l'auteur, ne définit pas l'heure actuelle de base */
