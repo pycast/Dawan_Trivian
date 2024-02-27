@@ -17,4 +17,22 @@ public class QuizDto {
     private String label;
     private List<CategoryDto> categories;
     private UserDto user;
+    private List<QuestionDto> questions;
+
+    @Data
+    @AllArgsConstructor
+    @NoArgsConstructor
+    public static class QuestionDto {
+        private long id;
+        private String label;
+        private List<AnswerDto> answers;
+
+        @Data
+        @AllArgsConstructor
+        @NoArgsConstructor
+        public static class AnswerDto {
+            private long id;
+            private String label;
+        }
+    }
 }

@@ -33,4 +33,6 @@ public class Quiz extends BaseEntity {
     @ManyToOne
     @JoinColumn(name="author_id")
     private User user;
+    @OneToMany(mappedBy = "quiz")
+    private List<Question> questions;
 }
