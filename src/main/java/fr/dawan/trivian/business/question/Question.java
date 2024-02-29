@@ -18,7 +18,7 @@ import java.util.List;
 @AllArgsConstructor
 public class Question extends BaseEntity {
     private String label;
-    @OneToMany(cascade = {CascadeType.PERSIST})
+    @OneToMany(cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
     private List<Answer> answers;
     @ManyToOne
     @JoinColumn(name = "quiz_id")

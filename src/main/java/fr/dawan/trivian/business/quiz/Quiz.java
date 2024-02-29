@@ -33,6 +33,6 @@ public class Quiz extends BaseEntity {
     @ManyToOne
     @JoinColumn(name="author_id")
     private User user;
-    @OneToMany(mappedBy = "quiz")
+    @OneToMany(mappedBy = "quiz", cascade = CascadeType.REMOVE)
     private List<Question> questions;
 }

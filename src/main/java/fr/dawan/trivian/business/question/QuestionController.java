@@ -1,9 +1,10 @@
 package fr.dawan.trivian.business.question;
 
 import fr.dawan.trivian.business.generic.GenericController;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("questions")
@@ -12,5 +13,10 @@ public class QuestionController extends GenericController<QuestionDto, QuestionS
 
     public QuestionController(QuestionService service) {
         super(service);
+    }
+
+    @GetMapping("/quiz/{id}")
+    public List<QuestionDto> findByQuizId(@PathVariable long id) {
+        return service.findByQuizId(id);
     }
 }
