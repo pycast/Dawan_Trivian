@@ -19,4 +19,5 @@ public class QuestionController extends GenericController<QuestionDto, QuestionS
     public List<QuestionDto> findByQuizId(@PathVariable long id) {
         return service.findByQuizId(id);
     }
+
 }
