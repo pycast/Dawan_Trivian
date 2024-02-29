@@ -1,7 +1,9 @@
 package fr.dawan.trivian.business.user;
 
 
+import fr.dawan.trivian.auth.UserSecurity;
 import fr.dawan.trivian.business.generic.GenericServiceImpl;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -9,5 +11,10 @@ public class UserServiceImpl extends GenericServiceImpl<User, UserRepository, Us
 
     public UserServiceImpl(UserRepository repository, UserMapper mapper) {
         super(repository, mapper);
+    }
+
+    @Override
+    public UserSecurity loadUserByUsername(String username) throws UsernameNotFoundException {
+        return repository.findByEmail(username).map(UserSecurity::new).orElseThrow();
     }
 }
